@@ -1,0 +1,22 @@
+Before you all install WIN10 Pro or what ever WIN10 (Ultimate), please, set the BIOS correctly. 
+Please, stop into BIOS (CMOS), and disable CSM (Compatibility Support Mode). Every BIOS these days
+is UEFI BIOS, especially on 64bit machines, since every 64bit BIOS is UEFI capable automatically.
+
+You need also to set proper GFX mode in BIOS. If you use legacy, you need to set vBIOS mode, if UEFI: GOP mode.
+
+Then you need to place WIN10.iso file on the USB stick. Please, use rufus 3.1 (https://rufus.ie/)
+for that, with proper UEFI settings:
+Partition scheme: GPT
+Target system: UEFI
+File system: FAT32
+Cluster size: 4096
+
+https://rufus.ie/pics/rufus_en.png
+
+Every Linux distro these days is UEFI capable. Please, do note that. So, after installing WIN10
+you can go ahead and install any Linux (if there is a free space on the HDD, or add another HDD),
+not touching BIOS.
+_______
+
+One final advise: if you do NOT need Legacy, do set everything ONLY to use GPT scheme and UEFI
+mode. Mixes are allowed, but if you do NOT know what are you doing, mixes can be deadly obstacles.
